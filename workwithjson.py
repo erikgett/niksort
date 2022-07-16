@@ -1,41 +1,118 @@
 import json
 
 
-class Userjson:
+class Owner:
     def __init__(self, userid):
         self.userid = userid
+        self.owner = 0
         self.sayhi()
         self.createjson()
 
     def createjson(self):
         pass
 
+    def owner(self):
+        # are pay money for service?
+        pass
+
     def sayhi(self):
-        print("hi", self.userid)
+        # test func
+        print("hi owner", self.userid)
+
+    def addmoderator(self):
+        #         create moder with his rules
+        pass
 
 
-class Moderatorjson():
+class Moderator:
+
     def __init__(self, userid):
         self.userid = userid
         self.sayhi()
-        self.createjson()
 
     def sayhi(self):
         print('hello moderator - ', self.userid)
 
+    def mailing(self):
+        pass
+
+    def giveaccesstolesson(self):
+        pass
+
+    def giveaccessforalllessons(self):
+        pass
+
+
+class User:
+    def __init__(self, userid):
+        self.userid = userid
+        print('hi', self.userid)
+
+    def getaccessforinfomation(self):
+        # get module or gide access
+        pass
+
 
 class Module:
-    pass
+    def __init__(self, productname):
+        self.productname = productname
+        self.access = 0
+        self.lessonslist = []
+
+    def modulelessons(self):
+        pass
+
+    def createmodule(self):
+        pass
+
+    def editmodule(self):
+        pass
+
+    def deletemodule(self):
+        pass
 
 
 class Lesson:
-    pass
+    def __init__(self, lessonname):
+        self.lessonname = lessonname
+        self.access = 0
+        self.boolean = 0
+
+    def addvideolesson(self):
+        pass
+
+    def addfileforlesson(self):
+        pass
+
+    def deletelesson(self):
+        pass
+
+    def createlesson(self):
+        pass
+
+    def editlesson(self):
+        pass
 
 
 class Homework:
-    pass
+    def __init__(self, lessonname, modulename):
+        self.lessonname = lessonname
+        self.listmadework = []
+        self.modulename = modulename
+        self.boolean = 0
+
+    def checkhomework(self):
+        pass
+
+    def addhomework(self):
+        pass
+
+    def delhomework(self):
+        pass
 
 
-erik = Userjson('ro')
+svyatoslav = Owner("svyatoslav")
 
-svyatoslav = Moderatorjson("bro")
+erik = Moderator('erik')
+
+uzver = User('uzver')
