@@ -32,7 +32,7 @@ class Moderator:
 
     def sayhi(self):
         print('hello moderator - ', self.userid)
-
+        print()
     def mailing(self):
         pass
 
