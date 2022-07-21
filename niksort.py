@@ -107,7 +107,7 @@ class TableInterseption:
 
         return infolist
 
-    def generatehtmltable(self):
+    def generatephototable(self):
         print('nf')
 
 
